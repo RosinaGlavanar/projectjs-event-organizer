@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="main.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+      <div class="col-sm">
+          <div class="column"><ul class="menu-list" id="list"></ul></div>
+          <div class="card" style="width: 40rem;">
+              <ul id="list" class="list-group list-group-flush"></ul>
+          </div>
+      </div>
+      
+    <div class="col-sm">    
+      <div class="card w-75">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+        <form>
+            <div class="form-row">
+                <label for="eventName" class="col-form-label ">Event name</label>
+              <div class="col-auto">
+                <input id="eventName" type="text" class="form-control" placeholder="Grand opening of new Club: 18+">
+              </div>
+            </div>
+        </form>
+      <p>
+        <div class="field">
+            <div class="control">
+              Event date  <input type="date" class="input" id="date"/>
+            </div>
+        </div>
+      </p>
+          <form>
+              <div class="field">
+                <div class="control">
+                  <label class="checkbox">
+                    <input type="checkbox" id="checkbox"/> /Аge definition of an event/. 18+</a>
+                  </label>
+                </div>
+              </div>
+              <button onclick="addEvent()" type="button" class="btn btn-primary btn-sm">Add event</button>
+          </div>
+      </div>
+    </div>
+    </div>
+</div>
+<!-- <details>
+    <summary>Copyright 1999-2014.</summary>
+    <p> - by Refsnes Data. All Rights Reserved.</p>
+  </details> -->
+
+      <script>
+           listGenerate()
+        </script>
+
+</body>
+</html>
